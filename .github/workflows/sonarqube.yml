@@ -1,8 +1,12 @@
-name: SonarQube Integration
-  sonarqube:
-    name: SonarQube Integration
+name: Build
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build
     runs-on: ubuntu-latest
-    
     steps:
     - uses: actions/checkout@v2
       with:
